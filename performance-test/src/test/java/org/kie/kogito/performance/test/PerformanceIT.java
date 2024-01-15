@@ -66,7 +66,6 @@ public class PerformanceIT {
         kogioAppContainer = new GenericContainer<>(System.getProperty("image.kogito.app"))
                 .withNetwork(network)
                 .withNetworkAliases("kogitoApp")
-                .withLogConsumer(new Slf4jLogConsumer(LOGGER))
                 .dependsOn(postgresqlContainer)
                 .withEnv("QUARKUS_DATASOURCE_JDBC_URL", jdbc)
                 .withEnv("QUARKUS_DATASOURCE_REACTIVE_URL", reactJdbc)
