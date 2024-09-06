@@ -24,11 +24,10 @@
   <parent>
     <groupId>org.kie.kogito</groupId>
     <artifactId>job-service-refactor-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>job-service-refactor-springboot</artifactId>
-  <version>1.0-SNAPSHOT</version>
 
   <properties>
     <kogito.di.enabled>false</kogito.di.enabled>
@@ -62,21 +61,21 @@
 
     <!-- kogito -->
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-processes-spring-boot-starter</artifactId>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-spring-boot-starter</artifactId>
     </dependency>
     <dependency>
       <groupId>org.kie.kogito</groupId>
       <artifactId>kogito-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-springboot-events-process-kafka</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-springboot-events-process-kafka</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-springboot-persistence-jdbc</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-springboot-persistence-jdbc</artifactId>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -88,12 +87,12 @@
     </dependency>
 
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-springboot-process-svg</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-springboot-process-svg</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-springboot-process-management</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-springboot-process-management</artifactId>
     </dependency>
 
     <dependency>
@@ -103,13 +102,13 @@
 
     <!-- data audit -->
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-data-audit-jpa-springboot</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kogito-addons-springboot-data-audit-jpa</artifactId>
       <version>999-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.kie.kogito</groupId>
-      <artifactId>kogito-addons-data-audit-springboot</artifactId>
+      <groupId>org.kie</groupId>
+      <artifactId>kogito-addons-springboot-data-audit</artifactId>
       <version>999-SNAPSHOT</version>
     </dependency>
 
