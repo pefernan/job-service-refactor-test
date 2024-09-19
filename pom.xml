@@ -20,36 +20,37 @@
   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.kie.kogito</groupId>
-  <artifactId>job-service-refactor-parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+    <groupId>org.kie.kogito</groupId>
+    <artifactId>job-service-refactor-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
-  <name>job-service-refactor-parent</name>
-  <packaging>pom</packaging>
+    <name>job-service-refactor-parent</name>
+    <packaging>pom</packaging>
 
-  <properties>
-    <compiler-plugin.version>3.10.1</compiler-plugin.version>
-    <maven.compiler.release>17</maven.compiler.release>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <properties>
+        <compiler-plugin.version>3.10.1</compiler-plugin.version>
+        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <skipITs>true</skipITs>
-    <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
-    <kogito.bom.group-id>org.kie.kogito</kogito.bom.group-id>
-    <kogito.bom.artifact-id>kogito-bom</kogito.bom.artifact-id>
-    <kogito.bom.version>999-SNAPSHOT</kogito.bom.version>
-    <version.org.kie.kogito>999-SNAPSHOT</version.org.kie.kogito>
-  </properties>
+        <skipITs>true</skipITs>
+        <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
+        <kogito.bom.group-id>org.kie.kogito</kogito.bom.group-id>
+        <kogito.bom.artifact-id>kogito-bom</kogito.bom.artifact-id>
+        <kogito.apps.bom.artifact-id>kogito-apps-bom</kogito.apps.bom.artifact-id>
+        <kogito.bom.version>999-SNAPSHOT</kogito.bom.version>
+        <version.org.kie.kogito>999-SNAPSHOT</version.org.kie.kogito>
+    </properties>
 
-  <modules>
-    <!--<module>job-service-refactor-quarkus-distributed</module>-->
-    <module>job-service-refactor-quarkus-embedded</module>
-    <module>job-service-refactor-springboot</module>
-    <module>performance-test</module>
-  </modules>
+    <modules>
+        <!--<module>job-service-refactor-quarkus-distributed</module>-->
+        <module>job-service-refactor-quarkus-embedded</module>
+        <module>job-service-refactor-springboot</module>
+        <module>performance-test</module>
+    </modules>
 </project>
